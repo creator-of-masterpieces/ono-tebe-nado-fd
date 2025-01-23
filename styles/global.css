@@ -36,3 +36,7 @@ img {
 button {
   font: inherit;
 }
+
+ul,ol {
+  list-style: none;
+}

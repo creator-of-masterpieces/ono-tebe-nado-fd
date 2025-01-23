@@ -1,4 +1,33 @@
 .header {
-    display: grid;
-    grid-template-columns: repeat();
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  padding: 0 50px 0 50px;
+}
+
+.cover {
+  display: grid;
+  grid-template-areas: 
+  "first-word . ."
+  ". second-word ."
+  ". . third-word"
+  "text text button";
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  background: 
+    #000 url(/images/cover.jpg) 
+    no-repeat
+    center /
+    cover;
+    color: #fff;
+}
+.cover-title__item {
+  display: block;
 }
