@@ -1,15 +1,36 @@
+/* general */
+.container {
+    padding: 0 50px 0 50px;
+  }
+  
+/* header */
+.header__container {
+    padding-top: 92px;
+    padding-bottom: 96px;;
+}
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-
-.nav__list {
-  display: flex;
   justify-content: space-between;
 }
 
-.container {
-  padding: 0 50px 0 50px;
+.header__nav {
+    margin-top: 41px;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 12px;
+}
+
+.contacts {
+    max-width: 240px;
+    text-align: left;
+}
+
+.header__contacts {
+    margin-top: 3px;
+    justify-self: end;
 }
 
 .cover {
