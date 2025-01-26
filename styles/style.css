@@ -14,6 +14,7 @@
   justify-content: space-between;
 }
 
+/* nav */
 .header__nav {
     margin-top: 41px;
 }
@@ -23,6 +24,7 @@
   row-gap: 12px;
 }
 
+/* contacts */
 .contacts {
     max-width: 240px;
     text-align: left;
@@ -33,15 +35,8 @@
     justify-self: end;
 }
 
+/* cover */
 .cover {
-  display: grid;
-  grid-template-areas: 
-  "first-word . ."
-  ". second-word ."
-  ". . third-word"
-  "text text button";
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(3, 1fr);
   background: 
     #000 url(/images/cover.jpg) 
     no-repeat
@@ -49,6 +44,25 @@
     cover;
     color: #fff;
 }
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+}
+
 .cover-title__item {
   display: block;
+}
+
+.cover__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cover-title__item_row_second {
+  align-self: center;
+}
+
+.cover-title__item_row_third {
+  align-self: flex-end;
 }
