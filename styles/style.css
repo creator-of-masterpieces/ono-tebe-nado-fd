@@ -37,8 +37,10 @@
 
 /* cover */
 .cover {
+  padding-top: 165px;
+  padding-bottom: 50px;;
   background: 
-    #000 url(/images/cover.jpg) 
+  #000 url(/images/cover.jpg) 
     no-repeat
     center /
     cover;
@@ -46,12 +48,9 @@
 }
 
 .cover__title {
+  margin-bottom: 106px;
   display: flex;
   flex-direction: column;
-}
-
-.cover-title__item {
-  display: block;
 }
 
 .cover__inner {
@@ -59,6 +58,11 @@
   justify-content: space-between;
 }
 
+.cover__text {
+  display: flex;
+  justify-content: space-between;
+  width: 637px;
+}
 .cover-title__item_row_second {
   align-self: center;
 }
