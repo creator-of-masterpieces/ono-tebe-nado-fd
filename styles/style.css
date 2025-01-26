@@ -70,3 +70,42 @@
 .cover-title__item_row_third {
   align-self: flex-end;
 }
+
+/* lots */
+.lots {
+  max-width: 1052px;
+}
+
+.main__lots {
+  margin: 180px auto 0 auto;
+}
+
+.lots__list {
+  display: grid;
+  grid-template-rows: 596px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+  align-content: start;
+}
+
+.lots-item {
+  padding: 48px 40px;
+}
+
+.lots-item__link {
+  display: block;
+  height: 100%;
+}
+
+.lots_item__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.lots__link {
+  display: block;
+  margin-top: 30px;
+  margin-left: 40px;
+}
