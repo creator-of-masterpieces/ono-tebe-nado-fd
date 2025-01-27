@@ -27,6 +27,10 @@
   row-gap: 12px;
 }
 
+.nav__link_current {
+  text-decoration: none;
+}
+
 .header__logo_link {
   display: block;
   width: 100%;
@@ -98,7 +102,6 @@
   grid-template-rows: 596px;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 25px;
-  align-content: start;
 }
 
 .lots-item {
@@ -149,4 +152,43 @@
 
 .about__description:last-child{
   margin-bottom: 0;
+}
+
+/* footer */
+.footer {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: max-content max-content max-content;
+  justify-content: space-between;
+  padding-bottom: 82px;
+}
+
+.main-page__footer {
+  margin-top: 181px;
+}
+
+/* footer__nav */
+.footer__nav-list {
+  flex-direction: column;
+  row-gap: 0;
+}
+
+.nav__item {
+  text-align: center;
+}
+
+/* social */
+.social {
+  justify-self: end;
+  max-width: 240px;
+}
+
+.social-list {
+  display: flex;
+  column-gap: 48px;
+}
+
+.social-list__icon {
+  width: 48px;
+  height: 48px;
 }
