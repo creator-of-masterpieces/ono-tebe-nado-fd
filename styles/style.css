@@ -2,26 +2,39 @@
 .container {
     padding: 0 50px 0 50px;
   }
-  
-/* header */
-.header__container {
-    padding-top: 92px;
-    padding-bottom: 96px;;
-}
-.header {
+
+.grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 148px 1fr;
   justify-content: space-between;
+}
+
+/* header */
+.header {
+  padding-top: 92px;
+  padding-bottom: 96px;;
 }
 
 /* nav */
 .header__nav {
-    margin-top: 41px;
+  margin-top: 41px;
+  margin-right: 36px;
 }
+
 .nav__list {
   display: flex;
   justify-content: space-between;
   row-gap: 12px;
+}
+
+.header__logo_link {
+  display: block;
+  width: 100%;
+}
+
+.header__logo-img {
+  width: 100%;
+  height: auto;
 }
 
 /* contacts */
