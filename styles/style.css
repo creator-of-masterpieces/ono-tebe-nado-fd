@@ -1,6 +1,6 @@
 /* general */
 .container {
-    padding: 0 50px 0 50px;
+  padding: 0 50px 0 50px;
   }
 
 .grid {
@@ -12,7 +12,9 @@
 /* header */
 .header {
   padding-top: 92px;
-  padding-bottom: 96px;;
+  padding-bottom: 96px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /* nav */
@@ -24,32 +26,48 @@
 .nav__list {
   display: flex;
   justify-content: space-between;
-  row-gap: 12px;
+  column-gap: 12px;
+  list-style: circle;
 }
 
-.nav__link_current {
+/* link */
+.link {
+  font-size: 18px;
+  line-height: 21px;
+  text-underline-offset: 4px;
+}
+
+.nav__item_current {
+  list-style: none;
+}
+
+.nav__item_current .link {
   text-decoration: none;
 }
 
-.header__logo_link {
-  display: block;
-  width: 100%;
+
+.header__logo-container {
+  max-width: 148px;
+  max-height: 104px;
 }
 
-.header__logo-img {
-  width: 100%;
-  height: auto;
-}
 
 /* contacts */
 .contacts {
-    max-width: 240px;
-    text-align: left;
+  max-width: 240px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
 }
 
 .header__contacts {
     margin-top: 3px;
     justify-self: end;
+}
+
+.contacts__address {
+  text-decoration: none;
 }
 
 /* cover */

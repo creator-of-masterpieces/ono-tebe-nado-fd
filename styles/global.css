@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 
-body {
+.main-page {
   width: 1100px;
   margin: 0 auto;
   font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 h1,
