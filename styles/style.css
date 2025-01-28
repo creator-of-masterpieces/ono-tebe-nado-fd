@@ -84,8 +84,22 @@
 
 .cover__title {
   margin-bottom: 106px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 3;
+  row-gap: 20px;
+  column-gap: 44px;;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115px;
+  letter-spacing: 0.3em;
+}
+
+.cover-title__item_row_second {
+  justify-self: center;
+}
+
+.cover-title__item_row_third {
+  justify-self: end;
 }
 
 .cover__inner {
@@ -97,6 +111,8 @@
   display: flex;
   justify-content: space-between;
   width: 637px;
+  font-size: 22px;
+  line-height: 28px;
 }
 .cover-title__item_row_second {
   align-self: center;
@@ -104,6 +120,17 @@
 
 .cover-title__item_row_third {
   align-self: flex-end;
+}
+
+.btn {
+  padding: 12px 32px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 /* lots */
