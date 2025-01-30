@@ -28,16 +28,16 @@
 }
 
 .nav__list {
+  max-width: 391px;
   display: flex;
   justify-content: space-between;
-  column-gap: 12px;
   list-style: circle;
 }
 
 /* link */
 .link {
   font-size: 18px;
-  line-height: 21px;
+  line-height: 24px;
   text-underline-offset: 4px;
 }
 
