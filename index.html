@@ -43,40 +43,49 @@
     <!-- main -->
     <main class="main">
       <!-- cover -->
-      <section class="cover container">
-        <h1 class="cover__title">
-          <span class="cover-title__item cover-title__item_row_first">ОНО</span>
-          <span class="cover-title__item cover-title__item_row_second">ТЕБ<span class="letter-none">Е</span></span>
-          <span class="cover-title__item cover-title__item_row_third">НАД<span class="letter-none">О</span></span>
-        </h1>
+      <section class="cover container overlay">
+          <h1 class="cover__title">
+            <span class="cover-title__item cover-title__item_row_first">ОНО</span>
+            <span class="cover-title__item cover-title__item_row_second">ТЕБ<span class="letter-none">Е</span></span>
+            <span class="cover-title__item cover-title__item_row_third">НАД<span class="letter-none">О</span></span>
+          </h1>
 
-        <div class="cover__inner">
-          <div class="cover__description">
-            <p class="cover__text">
-              <span class="cover__text-item">Аукцион</span>
-              <span class="cover__text-item">вещей,</span>
-              <span class="cover__text-item">в</span>
-              <span class="cover__text-item">которые</span>
-              <span class="cover__text-item">никто</span>
-              <span class="cover__text-item">не</span>
-              <span class="cover__text-item">верил</span>
-            </p>
+          <div class="cover__inner">
+            <div class="cover__description">
+              <p class="cover__text">
+                <span class="cover__text-item">Аукцион</span>
+                <span class="cover__text-item">вещей,</span>
+                <span class="cover__text-item">в</span>
+                <span class="cover__text-item">которые</span>
+                <span class="cover__text-item">никто</span>
+                <span class="cover__text-item">не</span>
+                <span class="cover__text-item">верил</span>
+              </p>
+            </div>
+            <button class="btn cover__btn">Сделать ставку</button>
           </div>
-          <button class="btn cover__btn">Сделать ставку</button>
-        </div>
       </section>
 
       <!-- lots -->
       <section class="lots main__lots">
         <h2 class="lots__title">Лоты</h2>
-        <ul class="lots__list">
-          <li class="lots-item lots__item">
-            <a class="lots-item__link" href="">
-              <article class="lots_item__card">
-                <h3 class="lots__subtitle">
+
+        <ul class="lots-list">
+
+          <li class="lots-list__item overlay">
+            <a class="lots-list__card-link" href="">
+              <article class="lots-list__card overlay overlay_theme_light">
+                <img
+                class="lots-list__image" 
+                src="/images/card-lot-01.jpg" 
+                alt="Кадр из фильма режиссёра Пола Томаса Андерсона"
+                width="334px"
+                height="596px">
+
+                <h3 class="lots-list__subtitle">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
-                <p class="lots__description">
+                <p class="lots-list__description">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
@@ -84,34 +93,43 @@
               </article>
             </a>
           </li>
-          <li class="lots-item lots__item">
-            <a class="lots-item__link" href="">
-              <article class="lots_item__card">
-                <h3 class="lots__subtitle">
+
+          <li class="lots-list__item overlay">
+            <a class="lots-list__card-link" href="">
+              <article class="lots-list__card overlay overlay_theme_light">
+                <img
+                class="lots-list__image" 
+                src="/images/card-lot-02.jpg" 
+                alt="Кадр из фильма режиссёра Пола Томаса Андерсона"
+                width="334px"
+                height="596px">
+
+                <h3 class="lots-list__subtitle">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
-                <p class="lots__description">
-                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
-                  с переходами на древнеанглийский. В ней одновременно
-                  рассказывается о 16 июня 1904 года и об истории литературы,
-                  начиная с античных времён. И это всё накладывается на
-                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
-                  Джеймса Джойса?
+                <p class="lots-list__description">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
                 </p>
               </article>
             </a>
           </li>
-          <li class="lots-item lots__item">
-            <a class="lots-item__link" href="">
-              <article class="lots_item__card">
-                <h3 class="lots__subtitle">
+
+
+          <li class="lots-list__item overlay">
+            <a class="lots-list__card-link" href="">
+              <article class="lots-list__card overlay overlay_theme_light">
+                <img
+                class="lots-list__image" 
+                src="/images/card-lot-03.jpg" 
+                alt="Кадр из фильма режиссёра Пола Томаса Андерсона"
+                width="334px"
+                height="596px">
+
+                <h3 class="lots-list__subtitle">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
-                <p class="lots__description">
-                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                  котиков... Сколько бы вы на такое поставили, если бы не знали,
-                  что это — одна из революционных работ Кандинского?
+                <p class="lots-list__description">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
                 </p>
               </article>
             </a>
