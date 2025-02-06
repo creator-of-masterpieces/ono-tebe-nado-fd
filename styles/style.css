@@ -204,6 +204,10 @@
   position: relative;
 }
 
+.lots-list__item .overlay::after{
+  background-color: rgba(0 0 0 / 0.05);
+}
+
 .lots-list__card-link {
   display: block;
   height: 100%;
@@ -220,8 +224,12 @@
 
 .lots-list__image {
   position: absolute;
-  inset: 0;
   z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .lots-list__subtitle {
