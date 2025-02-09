@@ -95,7 +95,7 @@
   z-index: 0;
   padding-top: 165px;
   padding-bottom: 50px;
-  background: #000 url(/images/cover.jpg) no-repeat center / cover;
+  background: #000 url(../images/cover.jpg) no-repeat center / cover;
   color: #fff;
 }
 
@@ -281,7 +281,7 @@
 
 .about__description-container {
   padding-top: 100px;
-  max-width: 693px;
+  max-width: 668px;
 }
 
 .about__title {
