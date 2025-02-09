@@ -190,7 +190,6 @@
   color: #fff;
 }
 
-
 .lots-list__link {
   display: block;
   height: 100%;
@@ -220,10 +219,6 @@
   background-image: url(../images/card-lot-03.jpg);
 }
 
-.lot-card .overlay::after {
-  background-color: rgba(0 0 0 / 0.05);
-}
-
 .lots-list__image {
   position: absolute;
   z-index: -1;
@@ -240,6 +235,8 @@
   line-height: 26.4px;
   text-transform: uppercase;
   text-decoration: underline solid #fff;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
 .lots__description {
