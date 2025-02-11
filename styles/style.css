@@ -34,9 +34,13 @@
   text-decoration-color: #970097cb;
 }
 
-.link:focus {
+.link:focus-visible {
   color: #970097cb;
   text-decoration-color: #970097cb;
+  
+}
+
+.link:focus {
   outline: none;
 }
 
@@ -221,6 +225,10 @@
   text-decoration: none;
 }
 
+.lots-list__link:focus {
+  outline: none;
+}
+
 .lot-card {
   display: flex;
   flex-direction: column;
@@ -230,6 +238,15 @@
   position: relative;
   z-index: 0;
   background: #000 no-repeat scroll center / cover;
+  transition: transform .3s;
+}
+
+.lot-card:hover, .lot-card:focus-visible {
+  transform: scale(1.05);
+}
+
+.lots-list__link:focus-visible .lot-card {
+  transform: scale(1.05);
 }
 
 .lot-card_type_film {
