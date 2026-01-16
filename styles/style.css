@@ -1,6 +1,6 @@
 /* general */
 .container {
-  padding: 0 50px 0 50px;
+  padding-inline: 50px;
 }
 
 .grid {
@@ -41,25 +41,51 @@
 .link:focus-visible {
   color: #970097cb;
   text-decoration-color: #970097cb;
-  
 }
 
 .link:active {
   text-decoration: none;
 }
 
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* main-page */
+.main-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+  "header header header"
+  "main main main"
+  "footer footer footer";
+}
+
 /* header */
 .header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  column-gap: 20px;
   padding-top: 92px;
   padding-bottom: 96px;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17;
+}
+
+.main-page__header {
+  grid-area: header;
 }
 
 /* header__nav */
 .header__nav {
-  margin-top: 41px;
-  margin-right: 36px;
+
 }
 
 .nav__list {
@@ -70,8 +96,8 @@
 }
 
 .header__nav-list {
-  max-width: 391px;
-  justify-content: space-between;
+  width: 391px;
+  gap: 32px;
 }
 
 .nav__item:has(.nav__link_current) {
@@ -96,13 +122,17 @@
   outline: none;
 }
 
-.header__logo-container {
-  max-width: 148px;
-  max-height: 104px;
+.header__logo_link {
+  width: 148px;
+  height: 104px;
 }
 
 .main-page .header__logo_link {
   cursor: auto;
+}
+
+.main-page__main {
+  grid-area: main;
 }
 
 /* contacts */
@@ -115,6 +145,8 @@
 }
 
 .header__contacts {
+  display: flex;
+  flex-direction: column;
   margin-top: 3px;
   justify-self: end;
 }
@@ -375,6 +407,7 @@
 }
 
 .main-page__footer {
+  grid-area: footer;
   margin-top: 181px;
 }
 
@@ -411,3 +444,40 @@
   width: 48px;
   height: 48px;
 }
+
+@media screen and (max-width: 1000px){
+  .header__nav-list {
+    width: auto;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-inline: 10px;
+  }
+
+  .header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 20px;
+    padding-block: 30px;
+  }
+
+  .header__nav-list {
+    gap: 5px;
+  }
+
+  .header__logo_link {
+    order: -1;
+  }
+
+  .header__contacts {
+    justify-self: auto;
+    text-align: center;
+    row-gap: 5px;
+  }
+}
+
