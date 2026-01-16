@@ -13,31 +13,28 @@
 <body class="page about-page">
 
 <!-- header -->
-<header class="header grid container">
+<header class="header main-page__header grid container">
     <nav class="nav header__nav">
         <ul class="nav__list header__nav-list">
-            <li class="nav__item nav__item_current">
+            <li class="nav__item">
                 <a class="link" href="index.html">главная</a>
             </li>
             <li class="nav__item">
                 <a class="link" href="catalog.html">посмотреть лоты</a>
             </li>
-            <li class="nav__item"><a class="link nav__link_current" href="about.html"
-                                     onclick="(e)=> e.preventDefault()">об аукционе</a></li>
+            <li class="nav__item nav__item_current"><a class="link nav__link_current">об аукционе</a></li>
         </ul>
     </nav>
 
-    <div class="header__logo-container">
-        <a class="header__logo_link" href="index.html" onclick="(e)=> e.preventDefault()">
-            <img
-                    class="header__logo-img"
-                    src="./images/logo-black.svg"
-                    alt='Логотип "Оно тебе надо"'
-                    width="129"
-                    height="105"
-            />
-        </a>
-    </div>
+    <a class="header__logo_link" href="index.html">
+        <img
+                class="header__logo-img"
+                src="./images/logo-black.svg"
+                alt='Логотип "Оно тебе надо"'
+                width="129"
+                height="105"
+        />
+    </a>
 
     <address class="contacts header__contacts">
         <a class="link contacts__phone" href="tel:+99995555555"

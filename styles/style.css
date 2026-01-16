@@ -263,7 +263,7 @@
 }
 
 .main__lots {
-    margin: 180px auto 0 auto;
+    margin: 180px auto 0;
 }
 
 .lots__title {
@@ -515,6 +515,14 @@
         font-size: 16px;
     }
 
+    .main__lots {
+        margin: 100px auto 0;
+    }
+
+    .main__about {
+        margin: 50px auto 0 auto;
+    }
+
     .btn {
         font-size: 18px;
         padding: 12px 15px;
@@ -540,6 +548,7 @@
         grid-template-columns: 1fr 48px;
         justify-items: center;
         row-gap: 15px;
+        margin-top: 100px;
     }
 
     .social {
@@ -568,11 +577,39 @@
     }
 
     .cover__title {
+        margin-bottom: 0;
         text-align: center;
+        line-height: 1.3;
     }
 
     .aligned-text_right {
         text-align: inherit;
+    }
+
+    .cover-title__item {
+        margin-bottom: 0;
+    }
+
+    .main__lots {
+        margin: 30px auto 0;
+    }
+
+    .lot-card {
+        min-height: 470px;
+    }
+
+    .main__about {
+        margin: 20px auto 0 auto;
+    }
+
+    .about__description-container {
+        padding-top: 50px;
+        max-width: 668px;
+    }
+
+    .footer {
+        margin-top: 50px;
+        padding-bottom: 40px;
     }
 }
 
