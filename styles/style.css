@@ -48,7 +48,6 @@
   text-decoration: none;
 }
 
-
 /* header */
 .header {
   padding-top: 92px;
@@ -97,11 +96,13 @@
   outline: none;
 }
 
-
-
 .header__logo-container {
   max-width: 148px;
   max-height: 104px;
+}
+
+.main-page .header__logo_link {
+  cursor: auto;
 }
 
 /* contacts */
