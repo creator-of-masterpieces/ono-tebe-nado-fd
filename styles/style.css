@@ -380,6 +380,10 @@
     border-radius: 50%;
 }
 
+.about__logo {
+    width: 148px;
+}
+
 .about__description-container {
     padding-top: 100px;
     max-width: 668px;
@@ -519,6 +523,10 @@
         margin: 100px auto 0;
     }
 
+    .lots__link {
+        font-size: inherit;
+    }
+
     .main__about {
         margin: 50px auto 0 auto;
     }
@@ -553,6 +561,10 @@
 
     .social {
         justify-self: unset;
+    }
+
+    .lots__link {
+        text-align: center;
     }
 }
 
